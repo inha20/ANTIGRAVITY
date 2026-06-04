@@ -1,87 +1,158 @@
-ANTIGRAVITY_TASK.md Purpose 
+# ANTIGRAVITY Purpose
 
 This repository serves as the operational workspace for managing research projects, thesis repositories, documentation standards, AI-assisted workflows, and future research development.
 
 The goal is to preserve continuity between AI sessions and maintain a consistent research infrastructure.
 
-Current Research Program Structure Recognition Theory 
+---
+
+# Current Research Program: Structure Recognition Theory
 
 Top-level research question:
 
-How do humans come to see something new?
+> How do humans come to see something new?
 
 Current exploration:
 
-Pattern ↓ Attention ↓ Structure ↓ Meaning ↓ Question ↓ Research Active Repositories Paper 1 
+```
+Pattern
+↓
+Attention
+↓
+Structure
+↓
+Meaning
+↓
+Question
+↓
+Research
+```
 
-Repository: CarnomapMinorThesis
+---
 
-Topic:
+# Active Repositories
 
-Karnaugh map visual patterns XOR/XNOR checkerboards Pattern-based interpretation 
+## Paper 1
 
-Status:
+**Repository:** 1KMapStructureInvariance
 
-Draft repository exists Images uploaded Future image standardization needed Paper 2 
+**Topic:**
+- Karnaugh map visual patterns
+- XOR/XNOR checkerboards
+- Pattern-based interpretation
 
-Repository: SymmetricBooleanFunctionMinorThesis
+**Status:**
+- Draft repository exists
+- Images uploaded
+- Future image standardization needed
 
-Topic:
+## Paper 2
 
-Symmetric Boolean functions Hamming Weight layers Ring structures Visual pattern analysis 
+**Repository:** 2SymmetricBooleanFunctionMinorThesis
 
-Status:
+**Topic:**
+- Symmetric Boolean functions
+- Hamming Weight layers
+- Ring structures
+- Visual pattern analysis
 
-Repository exists Images uploaded Figure numbering system exists Paper 3 
+**Status:**
+- Repository exists
+- Images uploaded
+- Figure numbering system exists
 
-Repository: 3VariableRearrangementInvarianceMinorThesis
+## Paper 3
 
-Topic:
+**Repository:** 3VariableRearrangementInvarianceMinorThesis
 
-Variable rearrangement Structural invariance Equivalence classes Symmetry preservation 
+**Topic:**
+- Variable rearrangement
+- Structural invariance
+- Equivalence classes
+- Symmetry preservation
 
-Status:
+**Status:**
+- Repository exists
+- pictures.txt maintained
+- Figure list documented
 
-Repository exists pictures.txt maintained Figure list documented Paper 4 
+## Paper 4
 
-Repository: 4StructureRecognitionTheory
+**Repository:** 4StructureRecognitionTheory
 
-Topic:
+**Topic:**
+- Structure discovery
+- Research worthiness
+- Question generation
+- Concept evolution
 
-Structure discovery Research worthiness Question generation Concept evolution 
+**Status:**
+- Early-stage framework repository
 
-Status:
+---
 
-Early-stage framework repository Research Infrastructure Research Portfolio 
+# Research Infrastructure
 
-Repository:
+## Research Portfolio
 
-Research-Portfolio
+**Repository:** Research-Portfolio
 
-Purpose:
+**Purpose:**
+- Public research homepage
+- GitHub Pages site
+- Central hub connecting all papers
 
-Public research homepage GitHub Pages site Central hub connecting all papers Repository Standards 
+## Repository Standards
 
 Future goal:
 
-Repository │ ├─ README.md ├─ paper/ ├─ images/ ├─ figures.md ├─ docs/ └─ references/ Figure Standardization (Future Task) 
+```
+Repository
+│
+├─ README.md
+├─ paper/
+├─ images/
+├─ figures.md
+├─ docs/
+└─ references/
+```
+
+## Figure Standardization (Future Task)
 
 Unify all papers under:
-
-Figure01_xxx.png Figure02_xxx.png Figure03_xxx.png 
+- Figure01_xxx.png
+- Figure02_xxx.png
+- Figure03_xxx.png
 
 Maintain:
-
-Figure number Filename Caption Repository reference 
+- Figure number
+- Filename
+- Caption
+- Repository reference
 
 Not a current priority.
 
-AI Workflow Rules 
+---
+
+# AI Workflow Rules
 
 When using AI assistants:
+- Preserve repository structure.
+- Preserve figure filenames whenever possible.
+- Create handover documents before major restructuring.
+- Prefer incremental improvements over full rewrites.
+- Keep research history visible.
 
-Preserve repository structure. Preserve figure filenames whenever possible. Create handover documents before major restructuring. Prefer incremental improvements over full rewrites. Keep research history visible. Immediate Priorities Continue StructureRecognitionTheory development. Complete Paper 3 organization. Improve Research Portfolio. Build GitHub Pages research map. Prepare future figure gallery. 
+---
 
-Last Updated: 2026-06-03
+# Immediate Priorities
 
+- Continue StructureRecognitionTheory development.
+- Complete Paper 3 organization.
+- Improve Research Portfolio.
+- Build GitHub Pages research map.
+- Prepare future figure gallery.
 
+---
+
+*Last Updated: 2026-06-04*
