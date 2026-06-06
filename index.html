@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANTIGRAVITY — AI Collaboration Workspace</title>
+  <meta name="description" content="ANTIGRAVITY: AI collaboration workspace for the Structure Recognition Research Program. Maintaining continuity between AI sessions for long-term research development." />
+  <meta name="keywords" content="AI collaboration workspace, research continuity, handover documents, session management, Structure Recognition Research, human-AI collaboration" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #21262d;
+      --border2: #30363d;
+      --text: #c9d1d9;
+      --text-sub: #8b949e;
+      --accent: #58a6ff;
+      --accent2: #79c0ff;
+      --accent3: #1f6feb;
+      --success: #56d364;
+      --success-bg: #0d2818;
+      --warning: #d29922;
+      --warning-bg: #231409;
+      --tag-bg: #161b22;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
+      font-size: .95rem;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      max-width: 900px; margin: 0 auto;
+    }
+    .header-top {
+      display: flex; align-items: center; gap: 1rem; margin-bottom: .8rem;
+    }
+    .repo-icon {
+      width: 2.8rem; height: 2.8rem;
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+    }
+    .repo-name {
+      font-size: 1.5rem; font-weight: 700; color: var(--accent);
+      letter-spacing: -.3px;
+    }
+    .repo-desc { color: var(--text-sub); font-size: .92rem; }
+
+    /* ── Nav ── */
+    .top-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,17,23,.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+      padding: .5rem 2rem;
+      display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;
+      font-size: .82rem;
+    }
+    .top-nav a { color: var(--accent); text-decoration: none; }
+    .top-nav a:hover { color: var(--accent2); }
+    .top-nav .series { margin-left: auto; font-size: .75rem; color: var(--text-sub); }
+
+    /* ── Main ── */
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 2rem 5rem; }
+
+    /* ── Sections ── */
+    section { margin-bottom: 3rem; }
+    h2 {
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--text); margin-bottom: 1rem;
+      padding-bottom: .4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: .98rem; font-weight: 700; margin: 1.5rem 0 .5rem; color: var(--accent2); }
+    p { font-size: .9rem; color: var(--text-sub); margin-bottom: .8rem; }
+
+    /* ── Status pills ── */
+    .status-row {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem;
+    }
+    .pill {
+      font-size: .75rem; font-weight: 600;
+      padding: .2rem .65rem; border-radius: 20px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .pill-green  { background: var(--success-bg); color: var(--success); border: 1px solid #1a4a2a; }
+    .pill-yellow { background: var(--warning-bg); color: var(--warning); border: 1px solid #4a3209; }
+    .pill-blue   { background: #0c1f3f; color: var(--accent); border: 1px solid var(--accent3); }
+    .pill-gray   { background: var(--surface); color: var(--text-sub); border: 1px solid var(--border2); }
+
+    /* ── Role card ── */
+    .role-diagram {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      font-family: 'Courier New', monospace;
+      font-size: .87rem;
+      color: var(--text-sub);
+      line-height: 2;
+    }
+    .role-diagram .hl { color: var(--accent2); font-weight: 700; }
+
+    /* ── File table ── */
+    .file-list { border: 1px solid var(--border2); border-radius: 8px; overflow: hidden; }
+    .file-row {
+      display: grid;
+      grid-template-columns: 1.8rem 1fr auto;
+      gap: .8rem; align-items: center;
+      padding: .7rem 1rem;
+      border-bottom: 1px solid var(--border);
+      font-size: .88rem;
+    }
+    .file-row:last-child { border-bottom: none; }
+    .file-row:hover { background: var(--surface); }
+    .file-row .file-icon { color: var(--text-sub); font-size: 1rem; }
+    .file-row .file-name { color: var(--accent); font-family: 'Courier New', monospace; }
+    .file-row .file-desc { color: var(--text-sub); font-size: .83rem; }
+    .file-row .badge {
+      font-size: .7rem; padding: .15rem .5rem; border-radius: 3px;
+      font-family: 'Helvetica Neue', sans-serif; white-space: nowrap;
+      background: var(--tag-bg); color: var(--accent2); border: 1px solid var(--border2);
+    }
+    .badge.start { background: #0c1f3f; color: var(--accent); border-color: var(--accent3); }
+
+    /* ── Principles ── */
+    .principles { list-style: none; }
+    .principles li {
+      display: flex; gap: .7rem; align-items: flex-start;
+      padding: .4rem 0; border-bottom: 1px solid var(--border);
+      font-size: .88rem;
+    }
+    .principles li:last-child { border-bottom: none; }
+    .principles .num {
+      flex-shrink: 0; width: 1.5rem; height: 1.5rem;
+      background: var(--surface); border: 1px solid var(--border2);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .75rem; font-weight: 700; color: var(--accent);
+      margin-top: .05rem;
+    }
+
+    /* ── Phase table ── */
+    .tbl-wrap { overflow-x: auto; }
+    table {
+      border-collapse: collapse; width: 100%; font-size: .87rem;
+      border: 1px solid var(--border2); border-radius: 6px; overflow: hidden;
+    }
+    th { background: var(--surface); color: var(--text-sub); padding: .5rem .9rem; text-align: left; font-weight: 600; border-bottom: 1px solid var(--border2); }
+    td { padding: .45rem .9rem; border-bottom: 1px solid var(--border); color: var(--text-sub); }
+    tr:last-child td { border-bottom: none; }
+    .td-code { font-family: 'Courier New', monospace; color: var(--accent2); }
+
+    /* ── Repo grid ── */
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: .9rem; margin-top: 1rem;
+    }
+    .repo-card {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 8px; padding: 1rem 1.1rem;
+      transition: border-color .15s;
+    }
+    .repo-card:hover { border-color: var(--accent); }
+    .repo-card h4 { font-size: .92rem; font-weight: 700; margin-bottom: .25rem; }
+    .repo-card h4 a { color: var(--accent); text-decoration: none; }
+    .repo-card h4 a:hover { text-decoration: underline; }
+    .repo-card p { font-size: .84rem; color: var(--text-sub); margin-bottom: .3rem; }
+    .repo-card .role { font-size: .76rem; color: var(--text-sub); font-style: italic; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      max-width: 900px; margin: 0 auto;
+      font-size: .8rem; color: var(--text-sub); text-align: center;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .site-header { padding: 1.5rem 1rem; }
+      main { padding: 1.5rem 1rem 4rem; }
+      .top-nav .series { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-header">
+  <div class="header-top">
+    <div class="repo-icon">⚡</div>
+    <div>
+      <div class="repo-name">ANTIGRAVITY</div>
+    </div>
+  </div>
+  <p class="repo-desc">AI Collaboration Workspace — Structure Recognition Research Program</p>
+  <p class="repo-desc" style="font-style:italic;margin-top:.3rem;">Maintaining continuity between AI sessions for long-term research development.</p>
+  <div class="status-row" style="margin-top:1rem">
+    <span class="pill pill-green">Phase 1 ✓ Complete</span>
+    <span class="pill pill-yellow">Phase 2 Partial</span>
+    <span class="pill pill-blue">Phase 3 In Progress</span>
+    <span class="pill pill-gray">Architecture B Adopted</span>
+  </div>
+</div>
+
+<nav class="top-nav">
+  <a href="#what">What This Is</a>
+  <a href="#files">Key Files</a>
+  <a href="#principles">Principles</a>
+  <a href="#phases">Phase Queue</a>
+  <a href="#program">Program</a>
+  <span class="series">AI Collaboration Workspace</span>
+</nav>
+
+<main>
+
+  <!-- What This Is -->
+  <section id="what">
+    <h2>What This Repository Is</h2>
+    <p>
+      ANTIGRAVITY is the <strong>operational layer</strong> of the Structure Recognition Research Program.
+      It does not contain research papers. It contains the infrastructure that makes long-term AI-assisted
+      research possible: handover documents, session logs, architecture decisions, and workflow guidelines.
+    </p>
+    <div class="role-diagram">
+      <span class="hl">Research-Portfolio</span> — Program Hub (public-facing navigation)<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br />
+      <span class="hl">ANTIGRAVITY</span> — AI Workspace (session continuity, operational layer)<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br />
+      <span class="hl">Paper Repositories 1–5</span> — Research content
+    </div>
+  </section>
+
+  <!-- Key Files -->
+  <section id="files">
+    <h2>Key Files</h2>
+    <div class="file-list">
+      <div class="file-row">
+        <span class="file-icon">📋</span>
+        <div>
+          <span class="file-name">Research-Portfolio/ProjectManagement/MasterHandoverDocument.md</span>
+          <div class="file-desc">Single authoritative program overview. Read first for any new session.</div>
+        </div>
+        <span class="badge start">Start Here</span>
+      </div>
+      <div class="file-row">
+        <span class="file-icon">📊</span>
+        <div>
+          <span class="file-name">RESEARCH_STATUS.md</span>
+          <div class="file-desc">Current state of all repositories, phase priorities, and session context.</div>
+        </div>
+        <span class="badge">Status</span>
+      </div>
+      <div class="file-row">
+        <span class="file-icon">✉️</span>
+        <div>
+          <span class="file-name">MESSAGE_TO_ANTIGRAVITY.md</span>
+          <div class="file-desc">Core operating principles for AI collaborators. Read once per program entry.</div>
+        </div>
+        <span class="badge">Principles</span>
+      </div>
+      <div class="file-row">
+        <span class="file-icon">🏗️</span>
+        <div>
+          <span class="file-name">PROGRAM_ARCHITECTURE_REVIEW.md</span>
+          <div class="file-desc">Architecture B decision record. Resolved 2026-06-05.</div>
+        </div>
+        <span class="badge">Resolved</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section id="principles">
+    <h2>Operating Principles</h2>
+    <ul class="principles">
+      <li><span class="num">1</span><span><strong>Preserve</strong> all existing filenames unless explicitly asked to rename.</span></li>
+      <li><span class="num">2</span><span><strong>Preserve</strong> discovery history — never delete historical material.</span></li>
+      <li><span class="num">3</span><span><strong>Prefer</strong> incremental improvements over full rewrites.</span></li>
+      <li><span class="num">4</span><span><strong>Document</strong> all significant decisions in CHANGELOG or handover files.</span></li>
+      <li><span class="num">5</span><span><strong>Avoid</strong> forcing theoretical frameworks onto early observations.</span></li>
+      <li><span class="num">6</span><span><strong>Prefer</strong> conceptual organization over producing more content.</span></li>
+      <li><span class="num">7</span><span><strong>When in doubt</strong>, preserve more information rather than less.</span></li>
+      <li><span class="num">8</span><span><strong>Image rule:</strong> All figures must use human-created style — Python/LaTeX/SVG code, or researcher-created tools. AI image generation services are prohibited.</span></li>
+    </ul>
+  </section>
+
+  <!-- Phase Queue -->
+  <section id="phases">
+    <h2>Summer 2026 Phase Queue</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Phase</th><th>Scope</th><th>Target</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Phase 1</td><td>Repository stabilization, README updates</td><td>June 5–18</td><td class="pill pill-green" style="display:table-cell;">✅ Complete</td></tr>
+          <tr><td>Phase 2</td><td>Figure standardization</td><td>June 20</td><td>🟡 Partial</td></tr>
+          <tr><td>Phase 3</td><td>GitHub Pages — all 8 repositories</td><td>June 21 – July 17</td><td>🔵 In Progress</td></tr>
+          <tr><td>Phase 4</td><td>Repository content improvement</td><td>July 1–21</td><td>⬜ Pending</td></tr>
+          <tr><td>Phase 5</td><td>Search discoverability</td><td>July 14–31</td><td>⬜ Pending</td></tr>
+          <tr><td>Phase 6</td><td>Future projects exploration</td><td>August</td><td>⬜ Pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section id="program">
+    <h2>Research Program Repositories</h2>
+    <div class="repo-grid">
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/1KMapStructureInvariance/" target="_blank">1 · KMap Structure Invariance</a></h4>
+        <p>XOR/XNOR checkerboard patterns</p>
+        <span class="role">Empirical Case Study 1</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/2SymmetricBooleanFunctionMinorThesis/" target="_blank">2 · Symmetric Boolean Functions</a></h4>
+        <p>Hamming Weight layer structures</p>
+        <span class="role">Empirical Case Study 2</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/3VariableRearrangementInvarianceMinorThesis/" target="_blank">3 · Variable Rearrangement</a></h4>
+        <p>Structural invariance under permutation</p>
+        <span class="role">Empirical Case Study 3</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/4StructureRecognitionTheory/" target="_blank">4 · Structure Recognition Theory</a></h4>
+        <p>H1–H7 meta-theoretical framework</p>
+        <span class="role">Theoretical Hub</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/5HumanAIResearchCollaboration/" target="_blank">5 · Human-AI Collaboration</a></h4>
+        <p>Long-term collaboration methods</p>
+        <span class="role">Methodological Study</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/Research-Portfolio/" target="_blank">Research Portfolio</a></h4>
+        <p>Program navigation hub</p>
+        <span class="role">Program Hub</span>
+      </div>
+      <div class="repo-card">
+        <h4><a href="https://inha20.github.io/" target="_blank">GitHub Profile (inha20)</a></h4>
+        <p>Public entry point to the research program. Research overview and concept genealogy for external visitors.</p>
+        <span class="role">Research Profile Page</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    ANTIGRAVITY &nbsp;|&nbsp;
+    <a href="https://github.com/inha20/ANTIGRAVITY" target="_blank">GitHub Repository</a>
+    &nbsp;|&nbsp; Choi Jonghun, Inha University
+  </p>
+  <p style="margin-top:.4rem; font-style:italic;">
+    Maintained across AI sessions as part of the Structure Recognition Research Program.
+  </p>
+</footer>
+
+</body>
+</html>
