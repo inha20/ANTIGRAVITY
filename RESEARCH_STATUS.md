@@ -1,7 +1,7 @@
 # ANTIGRAVITY Research Status
 
-**Last Updated:** 2026-06-07 (Session 16 — GitHub Pages 배포 완료 기록 + Phase 4 콘텐츠 개선 할 일 등록)  
-**Session State:** 연구자가 GitHub Settings → Pages → Source 설정 완료. **Phase 3 GitHub Pages 배포 확인.** 모든 8개 저장소에 index.html + .nojekyll 존재, URL 활성화. Phase 5 SEO 메타태그 AI 실행 가능 상태로 전환.  
+**Last Updated:** 2026-06-13 (Session 25 — Branch 8 스테일 ⚠️ 제거; AIHandoverInstructions v3.1 정정 내용 반영)  
+**Session State:** 연구자가 GitHub Settings → Pages → Source 설정 완료. **Phase 3 GitHub Pages 배포 확인.** 모든 9개 저장소에 index.html + .nojekyll 존재 (6BooleanFunctionSpaceTheory 추가), URL 활성화. Phase 5 SEO 메타태그 AI 실행 가능 상태로 전환.  
 **✅ Phase 3 완료 (2026-06-07 Session 16):** 연구자가 GitHub Settings → Pages → Source 설정 완료. 7월 예정 앞당김.
 
 **Next Priority — AI 실행 후보 (Phase 4 콘텐츠 개선 + Phase 5 SEO — 7월 일정 앞당김):**
@@ -136,6 +136,18 @@ Difference
 
 ---
 
+### 6BooleanFunctionSpaceTheory (Applied Mathematics Extension)
+
+**Topic:**
+- Boolean function space theory
+- Applied mathematics extension of the Structure Recognition Research Program
+
+**Status:** Active (신규 2026-06-12). Branch 8 정식 지정 완료 (2026-06-12).
+
+**Role in Architecture B:** Branch 8 — Applied Mathematics Extension (9번째 저장소)
+
+---
+
 ## Research Infrastructure
 
 ### Research-Portfolio
@@ -181,7 +193,7 @@ When using AI assistants:
 - Prefer incremental improvements over full rewrites
 - Keep research history visible
 - Read MasterHandoverDocument.md at the start of each new session
-- **이미지 생성 시 반드시 사람이 생성한 스타일 준수** — Python(matplotlib)/LaTeX(TikZ)/SVG 코드로 생성. AI 이미지 생성 서비스 사용 금지.
+- **이미지 생성 시 반드시 사람이 생성한 스타일 준수** — PowerPoint/Draw.io/손 그림 스캔/SVG 직접 작성. AI 이미지 생성 서비스 및 AI가 작성한 Python/LaTeX/TikZ 코드로 그림 생성 절대 금지. (아래 Image Creation Standard 표 참조)
 
 ---
 
@@ -231,18 +243,19 @@ Repository/
 
 ## Immediate Next Action for New AI Session
 
-1. Read `Research-Portfolio-main/ProjectManagement/MasterHandoverDocument.md` (v2.7)
+1. Read `Research-Portfolio-main/ProjectManagement/MasterHandoverDocument.md` (v3.0)
 2. Read this file (ANTIGRAVITY/RESEARCH_STATUS.md)
 3. Check `Research-Portfolio-main/ProjectManagement/ProjectStatus.md`
-4. **확인: 이미지 생성 = 연구자가 직접 생성한 스타일만 허용** (ImageStandardizationGuide.md Rev.2 주의)
-5. **Phase 3 완료 ✅ (2026-06-07 Session 16):**
+4. Check `Research-Portfolio-main/ProjectManagement/ConsistencyAuditFindings_20260612.md` (미점검사항 12건 미착수 — 필독)
+5. **확인: 이미지 생성 = 연구자가 직접 생성한 스타일만 허용** (ImageStandardizationGuide.md Rev.2 주의)
+6. **Phase 3 완료 ✅ (2026-06-07 Session 16):**
    - 연구자가 GitHub Settings → Pages → Source 설정 완료
-   - 모든 8개 저장소 GitHub Pages 활성화
+   - 모든 8개 저장소 GitHub Pages 활성화 (6BooleanFunctionSpaceTheory 추후 별도 확인 필요)
    - Phase 4 콘텐츠 개선 및 Phase 5 SEO 메타태그 즉시 실행 가능
-6. **Phase 2 마무리 완료를 위해 연구자가 해야 할 작업:**
+7. **Phase 2 마무리 완료를 위해 연구자가 해야 할 작업:**
    - Papers 1–3 originals/ 폴더에 PNG 파일 복사
    - Paper 3 그림 25개 직접 제작 (`figures/Figure_Specifications_Paper3.md` 사양서 상세 첨부)
-7. **AI가 실행 가능한 다음 작업 후보 (Session 14 이후):**
+8. **AI가 실행 가능한 다음 작업 후보 (Session 14 이후):
    - **[완료 Session 13]** 2SymmetricBooleanFunctionMinorThesis `images/` 중복 확인: 3.png~8.png = 완전 중복, 9.png = 크기 불일치(연구자 확인 필요)
    - **[완료 Session 13]** ResearchLog.md Entry 17/18 오타 교정
    - **[완료 Session 13]** Phase 5 점검: 8개 저장소 README 상태 확인
@@ -252,7 +265,13 @@ Repository/
    - **[완료 Session 15]** inha20 README Abstract 정식 레이블 추가
    - **[완료 Session 15]** ResearchTimeline.md Sessions 13–15 반영 업데이트
    - **[완료 Session 16]** RESEARCH_STATUS.md Phase 3 배포 완료 기록; Phase 4 할 일 등록; 7월 일정 앞당김; 관리 문서 일괄 업데이트
-   - **다음 우선순위 (Phase 4 활성 개시):** ConceptGenealogy.md 정리, ResearchLog Entry 19+, Phase 5 SEO 메타태그 (7월 앞당김)
+   - **[완료 Session 17]** 5HumanAIResearchCollaboration paper.md 대규모 통합 편집 — §4.7 Context Transfer Architecture, §4.8 Core Propositions (P1–P11), §7.8 Productive vs. Reconstruction Tokens, §8.12 Artifact-Context Matrix, §8.13 Handover Quality Levels + Repository Drift, §9.1 재구조화, §12.11 Repository Drift Failure, §13.4 검증 설계 신규 추가
+   - **[완료 Session 18]** ConsistencyAuditFindings_20260612.md 생성; 3개 핵심 문서 감사 알림 포인터 추가; 6BooleanFunctionSpaceTheory 9번째 저장소 MasterHandoverDocument·AIHandoverInstructions 등록
+   - **[완료 Session 19]** AIHandoverInstructions v2.4→v2.7 전면 업데이트 (Part 11 신설; Branch 8 정식 지정); MasterHandoverDocument 헤더 v3.0 동기화; ConsistencyAuditFindings 행동 계획 현황 반영
+   - **[완료 Session 20]** ConsistencyAuditFindings Step 4·5 완료 확인 표시; Session 19 AIHandoverInstructions 버전 오기재(v2.8→v2.7) 수정
+   - **[완료 Session 21]** RESEARCH_STATUS.md 4세션 방치 수정 (Session 17–20 반영; 6BooleanFunctionSpaceTheory 등록; v2.7→v3.0 교정); MasterHandoverDocument §8 이미지 규칙 충돌 해소; AIHandoverInstructions Part 10 항목 6 추가 (기록만 — 파일 미수정); ConsistencyAuditFindings Step 2 완료 처리 (기록만 — 파일 미수정)
+   - **[완료 Session 22]** AIHandoverInstructions v2.7→v2.8 실제 파일 수정: Part 10 항목 6 삽입 (Part 11 진입점 연결); Part 11 Step 3 이미지 규칙 충돌 잔존 문구 수정; ConsistencyAuditFindings Step 2 실제 수정 (ANTIGRAVITY + ProjectStatus 완료 확인 반영)
+   - **다음 우선순위:** ConsistencyAuditFindings 미점검사항 12건 순차 처리 (Step 7); ConceptGenealogy.md 정리, ResearchLog Entry 19+, Phase 5 SEO 메타태그 (7월 앞당김)
    - Phase 5 실질 실행(topic tags, GitHub Pages SEO)은 7월 일정 유지 (연구자 직접)
 
 ---
