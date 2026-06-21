@@ -38,12 +38,12 @@ ANTIGRAVITY operates as the **operational layer** beneath the Research-Portfolio
 
 ## Key Files
 
+> **[2026-06-20 압축 현행화]** 이 저장소는 문서 압축 이후 `README.md` 단일 파일로 운영됩니다.  
+> 이전에 별도로 존재하던 `RESEARCH_STATUS.md`, `MESSAGE_TO_ANTIGRAVITY.md`, `PROGRAM_ARCHITECTURE_REVIEW.md`, `ANTIGRAVITY_TheoryIntegrationTask.md`의 내용은 모두 이 파일(`README.md`)에 통합되었습니다.
+
 | File | Purpose |
 |---|---|
-| `RESEARCH_STATUS.md` | **Start here.** Current state of all repositories. Phase priorities. Session handover context. |
-| `MESSAGE_TO_ANTIGRAVITY.md` | Core operating principles for AI collaborators. Read once per program entry. |
-| `PROGRAM_ARCHITECTURE_REVIEW.md` | Architecture B decision record. Resolved 2026-06-05. |
-| `README.md` | This file. |
+| `README.md` | **Start here.** Current state of all repositories, operating principles, Architecture B decision record, Phase priorities, session handover context. (압축 통합본) |
 
 ---
 
@@ -51,10 +51,9 @@ ANTIGRAVITY operates as the **operational layer** beneath the Research-Portfolio
 
 **Required reading order:**
 
-1. `Research-Portfolio-main/ProjectManagement/MasterHandoverDocument.md` — single authoritative program overview
-2. `RESEARCH_STATUS.md` — current phase and immediate priorities
-3. `MESSAGE_TO_ANTIGRAVITY.md` — operating principles
-4. `Research-Portfolio-main/ProjectManagement/ProjectStatus.md` — task checklist
+1. `inha20-main/program/ProjectManagement/MasterHandoverDocument.md` — single authoritative program overview
+2. `ANTIGRAVITY-main/README.md` (이 파일) — current phase and immediate priorities, operating principles
+3. `inha20-main/program/ProjectManagement/ProjectStatus.md` — task checklist
 
 **Then ask the researcher:** "Where did we leave off?"
 
@@ -76,7 +75,7 @@ Paper 3: Variable Rearrangement          — Empirical Case Study 3
 Paper 4: Structure Recognition Theory    — Theoretical Hub
 ```
 
-**Current Phase:** Phase 1 — Repository Stabilization (Summer 2026)
+**Current Phase:** Phase 4 — Repository Content Improvement + Phase 5 SEO (June–July 2026)
 
 ---
 
@@ -90,20 +89,18 @@ Paper 4: Structure Recognition Theory    — Theoretical Hub
 6. **Prefer** conceptual organization over producing more content
 7. **When in doubt**, preserve more information rather than less
 
-See `MESSAGE_TO_ANTIGRAVITY.md` for the full operating principles and Human-AI collaboration model.
-
 ---
 
 ## Summer 2026 Phase Queue
 
-| Phase | Scope | Target |
+| Phase | Scope | Status |
 |---|---|---|
-| Phase 1 | Repository stabilization, README updates | June 5–18 |
-| Phase 2 | Figure standardization | June 20 (one day) |
-| Phase 3 | GitHub Pages construction | June 21 – July 17 |
-| Phase 4 | Repository content improvement | July 1–21 |
-| Phase 5 | Search discoverability | July 14–31 |
-| Phase 6 | Future projects exploration | August |
+| Phase 1 | Repository stabilization, README updates | ✅ 완료 (2026-06-07) |
+| Phase 2 | Figure standardization | 🟡 연구자 직접 작업 필요 (Paper 3 그림 25개 미완성) |
+| Phase 3 | GitHub Pages construction | ✅ 완료 (2026-06-07, Session 16) |
+| Phase 4 | Repository content improvement | 🔴 Active (June–July) |
+| Phase 5 | Search discoverability (SEO) | 🟠 Available (AI 실행 가능 항목 미착수) |
+| Phase 6 | Future projects exploration | 🔵 August |
 
 Full detail: `Research-Portfolio-main/ProjectManagement/Expand_Summer2026_ResearchMaintenancePlan.md`
 
@@ -120,8 +117,11 @@ This repository is part of the **Structure Recognition Research Program**.
 | [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis) | Empirical Case Study 2 |
 | [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
 | [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
+| [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Methodological Meta-layer (Paper 5) |
+| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Branch 8) |
+| [inha20](https://github.com/inha20/inha20) | GitHub Profile — 공개 진입점 + 중앙 허브 |
 
-**Master Handover Document:** [MasterHandoverDocument.md](https://github.com/inha20/Research-Portfolio/blob/main/ProjectManagement/MasterHandoverDocument.md)
+**Master Handover Document:** [MasterHandoverDocument.md](https://github.com/inha20/inha20/blob/main/program/ProjectManagement/MasterHandoverDocument.md)
 
 ---
 
