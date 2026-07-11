@@ -49,11 +49,12 @@ ANTIGRAVITY operates as the **operational layer** beneath the Research-Portfolio
 
 ## For AI Collaborators Starting a New Session
 
+> **⚠️ 2026-06-21 업데이트 (Session 33):** 아래 읽기 순서가 현행화되었습니다. 이전 버전에 기술되어 있던 `MasterHandoverDocument.md` 및 `ProjectStatus.md` 경로는 더 이상 유효하지 않습니다.
+
 **Required reading order:**
 
-1. `inha20-main/program/ProjectManagement/MasterHandoverDocument.md` — single authoritative program overview
-2. `ANTIGRAVITY-main/README.md` (이 파일) — current phase and immediate priorities, operating principles
-3. `inha20-main/program/ProjectManagement/ProjectStatus.md` — task checklist
+1. `inha20-main/SESSION_START.md` — **단일 AI 진입점 (v4.0)**. 프로그램 전체 구조, AI 운영 원칙, 작업 이력 포함.
+2. `inha20-main/ProjectDashboard.md` — 현재 대기 중인 작업 목록 및 저장소 헬스 현황.
 
 **Then ask the researcher:** "Where did we leave off?"
 
@@ -118,16 +119,16 @@ This repository is part of the **Structure Recognition Research Program**.
 | [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
 | [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
 | [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Methodological Meta-layer (Paper 5) |
-| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Branch 8) |
+| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Branch 8, TODO.md 기반 통합 운영) |
 | [inha20](https://github.com/inha20/inha20) | GitHub Profile — 공개 진입점 + 중앙 허브 |
 
-**Master Handover Document:** [MasterHandoverDocument.md](https://github.com/inha20/inha20/blob/main/program/ProjectManagement/MasterHandoverDocument.md)
+**AI Entry Point:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
 
 ---
 
 ## Author
 
 Choi Jonghun  
-Inha University
+Independent researcher · Graduate of Inha Technical College
 
 *ANTIGRAVITY — maintained across AI sessions as part of the Structure Recognition Research Program*
