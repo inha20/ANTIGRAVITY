@@ -53,8 +53,8 @@ ANTIGRAVITY operates as the **operational layer** beneath the Research-Portfolio
 
 **Required reading order:**
 
-1. `inha20-main/SESSION_START.md` — **단일 AI 진입점 (v4.0)**. 프로그램 전체 구조, AI 운영 원칙, 작업 이력 포함.
-2. `inha20-main/ProjectDashboard.md` — 현재 대기 중인 작업 목록 및 저장소 헬스 현황.
+1. `inha20/SESSION_START.md` — **단일 AI 진입점 (v4.0)**. 프로그램 전체 구조, AI 운영 원칙, 작업 이력 포함.
+2. `inha20/ProjectDashboard.md` — 현재 대기 중인 작업 목록 및 저장소 헬스 현황.
 
 **Then ask the researcher:** "Where did we leave off?"
 
@@ -103,7 +103,7 @@ Paper 4: Structure Recognition Theory    — Theoretical Hub
 | Phase 5 | Search discoverability (SEO) | 🟠 Available (AI 실행 가능 항목 미착수) |
 | Phase 6 | Future projects exploration | 🔵 August |
 
-Full detail: `Research-Portfolio-main/ProjectManagement/Expand_Summer2026_ResearchMaintenancePlan.md`
+Full detail: `Research-Portfolio/ProjectManagement/Expand_Summer2026_ResearchMaintenancePlan.md`
 
 ---
 
