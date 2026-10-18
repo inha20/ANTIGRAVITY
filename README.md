@@ -29,7 +29,7 @@ Research-Portfolio — Program Hub (public-facing navigation)
 ANTIGRAVITY — AI Workspace (session continuity, operational layer)
          |
          ↓
-Paper Repositories 1–4 — Research content
+Paper Repositories 1–8 — Research content (1–6: archived research notes; 7–8: current papers)
 ```
 
 ANTIGRAVITY operates as the **operational layer** beneath the Research-Portfolio hub. While Research-Portfolio is the public-facing navigation point, ANTIGRAVITY is where AI session context is preserved across sessions.
@@ -76,6 +76,13 @@ Paper 3: Variable Rearrangement          — Empirical Case Study 3
 Paper 4: Structure Recognition Theory    — Theoretical Hub
 ```
 
+Papers 1–6 are archived, read-only research notes (2026-10-18). The two current papers are standalone and can be read without the earlier ones:
+
+```
+Paper 7: Karnaugh Group Classification                  — Standalone mathematics paper
+Paper 8: Structural Thinking and Human-AI Collaboration — Standalone framework proposal
+```
+
 **Current Phase:** Phase 4 — Repository Content Improvement + Phase 5 SEO (June–July 2026)
 
 ---
@@ -119,8 +126,12 @@ This repository is part of the **Structure Recognition Research Program**.
 | [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
 | [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
 | [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Methodological Meta-layer (Paper 5) |
-| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Branch 8, TODO.md 기반 통합 운영) |
+| [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Paper 6, TODO.md 기반 통합 운영) |
+| [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification) | Standalone Mathematics Paper (Paper 7) |
+| [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | Standalone Framework Proposal (Paper 8) |
 | [inha20](https://github.com/inha20/inha20) | GitHub Profile — 공개 진입점 + 중앙 허브 |
+
+Papers 1–6 are archived, read-only research notes (2026-10-18); Papers 7 and 8 are the current papers.
 
 **AI Entry Point:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
 
