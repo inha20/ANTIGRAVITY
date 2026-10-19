@@ -83,7 +83,7 @@ Paper 7: Karnaugh Group Classification                  — Standalone mathemati
 Paper 8: Structural Thinking and Human-AI Collaboration — Standalone framework proposal
 ```
 
-**Current Phase:** Phase 4 — Repository Content Improvement + Phase 5 SEO (June–July 2026)
+**Current Phase (2026-10-19):** 1~6번 저장소는 보관(읽기 전용)되었고 7·8번 독립 논문의 정리가 끝난 상태입니다. 투고 준비는 학회가 정해진 뒤 진행합니다. 이전 기록: Phase 4 — Repository Content Improvement + Phase 5 SEO (June–July 2026)
 
 ---
 
@@ -99,16 +99,16 @@ Paper 8: Structural Thinking and Human-AI Collaboration — Standalone framework
 
 ---
 
-## Summer 2026 Phase Queue
+## Phase Queue (2026-06 plan, status as of 2026-10-19)
 
 | Phase | Scope | Status |
 |---|---|---|
-| Phase 1 | Repository stabilization, README updates | ✅ 완료 (2026-06-07) |
-| Phase 2 | Figure standardization | 🟡 연구자 직접 작업 필요 (Paper 3 그림 25개 미완성) |
-| Phase 3 | GitHub Pages construction | ✅ 완료 (2026-06-07, Session 16) |
-| Phase 4 | Repository content improvement | 🔴 Active (June–July) |
-| Phase 5 | Search discoverability (SEO) | 🟠 Available (AI 실행 가능 항목 미착수) |
-| Phase 6 | Future projects exploration | 🔵 August |
+| Phase 1 | Repository stabilization, README updates | ✅ 완료 (2026-06-07; 2026-10에 1~8번의 링크·이름 정리) |
+| Phase 2 | Figure standardization | ✅ 종결 (2026-10: 1~6번은 보관, 3번 images/는 31개로 정리, 그림은 7번에 정리하고 8번에는 기존 그림 3개를 삽입) |
+| Phase 3 | GitHub Pages construction | ✅ 완료 (2026-06-07, Session 16; 2026-10에 1~6번 사이트 재배포) |
+| Phase 4 | Repository content improvement | ✅ 7·8번 독립 논문으로 통합·정리 (2026-10) |
+| Phase 5 | Search discoverability (SEO) | ⚪ 하지 않음 (미착수 상태로 종결) |
+| Phase 6 | Future projects exploration | 🔵 투고 준비와 후속 연구 (학회 선정 후) |
 
 Full detail: `Research-Portfolio/ProjectManagement/Expand_Summer2026_ResearchMaintenancePlan.md` — 이 문서는 2026-06-20에 삭제되어 현재는 없으며, git 이력(`0caed63^`)에서만 볼 수 있습니다.
 
