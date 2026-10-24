@@ -140,6 +140,6 @@ Papers 1–6 are archived, read-only research notes (2026-10-18); Papers 7 and 8
 ## Author
 
 Choi Jonghun  
-Independent researcher · Graduate of Inha Technical College
+Independent researcher · 2nd-year student at Inha Technical College
 
 *ANTIGRAVITY — maintained across AI sessions as part of the Structure Recognition Research Program*
