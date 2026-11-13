@@ -120,7 +120,7 @@ This repository is part of the **Structure Recognition Research Program**.
 
 | Repository | Role |
 |---|---|
-| [Research-Portfolio](https://github.com/inha20/Research-Portfolio) | Program Hub |
+| [Research-Portfolio](https://inha20.github.io/Research-Portfolio/) | Program Hub (website; the single public entry point) |
 | [1KMapStructureInvariance](https://github.com/inha20/1KMapStructureInvariance) | Empirical Case Study 1 |
 | [2SymmetricBooleanFunctionMinorThesis](https://github.com/inha20/2SymmetricBooleanFunctionMinorThesis) | Empirical Case Study 2 |
 | [3VariableRearrangementInvarianceMinorThesis](https://github.com/inha20/3VariableRearrangementInvarianceMinorThesis) | Empirical Case Study 3 |
@@ -129,7 +129,7 @@ This repository is part of the **Structure Recognition Research Program**.
 | [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | Applied Mathematics Extension (Paper 6, TODO.md 기반 통합 운영) |
 | [7KarnaughGroupClassification](https://github.com/inha20/7KarnaughGroupClassification) | Standalone Mathematics Paper (Paper 7) |
 | [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | Standalone Framework Proposal (Paper 8) |
-| [inha20](https://github.com/inha20/inha20) | GitHub Profile — 공개 진입점 + 중앙 허브 |
+| [inha20](https://github.com/inha20/inha20) | GitHub profile README + AI entry point (SESSION_START.md) |
 
 Papers 1–6 are archived, read-only research notes (2026-10-18); Papers 7 and 8 are the current papers.
 
